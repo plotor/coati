@@ -1,6 +1,6 @@
-## multi-sentence compression
+## Coati
 
-本项目是一个多语句压缩算法的实现，基于词图对描述相同和相似主题的多个语句实施压缩，最终生成承载主题主干信息语句的过程。具体算法思想可以参考下面两篇论文：
+Coati 是一个多语句压缩算法的实现项目，基于词图对描述相同和相似主题的多个语句实施压缩，最终生成承载主题主干信息语句的过程。具体算法思想可以参考下面两篇论文：
 
 1. [Multi-sentence compression: finding shortest paths in word graphs](http://dl.acm.org/citation.cfm?id=1873818)
 2. [Multiple alternative sentence compressions for automatic text summarization](http://www.umiacs.umd.edu/~dmzajic/papers/DUC2007.pdf)
