@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coati"
+version = "0.5.0"
+description = "Multi-sentence compression based on word graph algorithms"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = [
+    "networkx>=2.6",
+]
+
+[project.scripts]
+coati = "coati.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["coati*"]
+
+[tool.setuptools.package-data]
+coati = ["resources/*.dat"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
